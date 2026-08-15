@@ -344,6 +344,18 @@ body.light-theme .navbar.menu-open {
 
 .highlight { color: var(--accent); }
 
+/* Styling Khusus Nama Biar Bold & Berkelas */
+.bold-name {
+  font-weight: 800 !important;
+  letter-spacing: 0.5px;
+  /* Efek Glow Tipis Pas Mode Gelap */
+  text-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+}
+
+body.light-theme .bold-name {
+  text-shadow: none;
+}
+
 .subtitle {
   color: var(--text-muted);
   font-size: 1.05rem;
