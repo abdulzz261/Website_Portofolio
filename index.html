@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Developer</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- SCRIPT UPGRADE: MENCEGAH FLASH TEMA & FLICKER DESKTOP -->
+  <script>
+    (function() {
+      // 1. Kunci Tema Langsung Pas Loading
+      if (localStorage.getItem('portfolio-theme') === 'light') {
+        document.documentElement.classList.add('light-theme');
+      }
+      // 2. Kunci Layar Laptop Pas Loading (Biar Gak Flicker UI HP)
+      if (window.innerWidth >= 992) {
+        document.documentElement.classList.add('is-desktop');
+      }
+    })();
+  </script>
+</head>
+<body class="preload dark-theme">
+
+  <!-- Navbar Fixed -->
+  <!-- STRUKTUR NAVBAR HTML YANG BENAR -->
+<!-- STRUKTUR NAVBAR UTAMA (STANDAR & AMAN SE-DUNIA) -->
+<nav class="navbar">
+  <div class="logo">MY PORTFOLIO</div>
+
+  <div class="nav-right">
+    <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+    <button id="menu-toggle" class="menu-btn" aria-label="Toggle Menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+  <ul id="nav-links" class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="status-badge">
+      <span class="pulse-dot"></span> Available for Projects
+    </div>
+
+    <h1>Front-End & <span class="highlight">Software Developer</span></h1>
+    <p class="subtitle">Siswa Rekayasa Perangkat Lunak (RPL) yang berfokus pada pengembangan aplikasi web modern, efisien, dan ramah pengguna.</p>
+    
+    <div class="hero-buttons">
+      <a href="projects.html" class="btn primary"><i class="fa-solid fa-code"></i> Lihat Project</a>
+      <a href="contact.html" class="btn secondary"><i class="fa-solid fa-envelope"></i> Hubungi Saya</a>
+    </div>
+
+    <div class="code-window">
+      <div class="window-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <div class="code-body">
+        <code>
+          <span class="keyword">const</span> <span class="property">developer</span> = {<br>
+          &nbsp;&nbsp;<span class="property">name</span><span class="punctuation">:</span> <span class="string">'RPL Student'</span>,<br>
+          &nbsp;&nbsp;<span class="property">role</span><span class="punctuation">:</span> <span class="string">'Junior Web Developer'</span>,<br>
+          &nbsp;&nbsp;<span class="property">skills</span><span class="punctuation">:</span> [<span class="string">'HTML'</span>, <span class="string">'CSS'</span>, <span class="string">'JS'</span>, <span class="string">'Python'</span>, <span class="string">'Flask'</span>],<br>
+          &nbsp;&nbsp;<span class="property">status</span><span class="punctuation">:</span> <span class="string">'Building awesome apps 🚀'</span><br>
+          };
+        </code>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <div class="stats-container">
+  <div class="stat-box">
+    <h3>5+</h3>
+    <p>Project Selesai</p>
+  </div>
+  
+  <div class="stat-box">
+    <h3>8+</h3>
+    <p>Tech Stack Dikuasai</p>
+  </div>
+  
+  <div class="stat-box">
+    <h3>100%</h3>
+    <p>Semangat Coding</p>
+  </div>
+
+  <!-- CARD KE-4 BIAR PAS 4 BIJI (POLA 2-2 DI HP) -->
+  <div class="stat-box">
+    <h3>100%</h3>
+    <p>Komitmen RPL</p>
+  </div>
+</div>
+
+  <footer class="footer">
+    <p>&copy; 2026 Developer Portfolio. Built with HTML, CSS, & JS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
